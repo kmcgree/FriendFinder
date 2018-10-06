@@ -8,7 +8,7 @@ module.exports = (app) => {
         res.json(friends);
     });
 
-    app.post('app/friends', (req, res) => {
+    app.post('api/friends', (req, res) => {
         let userScores = req.body.scores;
         let difference = 1000;
         let bestMatchName = '';

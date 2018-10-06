@@ -1,5 +1,5 @@
 
-const friends = require('../data/friends');
+const friends = require('../data/friends.js');
 
 
 module.exports = (app) => {
@@ -9,7 +9,6 @@ module.exports = (app) => {
     });
 
     app.post('api/friends', (req, res) => {
-        let userScores = req.body.scores;
         let difference = 1000;
         let bestMatchName = '';
         let bestMatchPhoto = '';
